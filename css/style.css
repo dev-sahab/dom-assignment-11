@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);@import url(https://fonts.googleapis.com/css?family=La+Belle+Aurore:regular);
+
+
+:root{
+    --clr: rgb(124, 124, 124);
+} 
+        
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+body{
+    background: #1f242d;
+    color: #fff;
+}
+.container .row.f-height{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-height div{
+    text-align: center;
+}
+.h1{
+    color: rgb(40, 240, 107);
+    position: relative;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+.h2{
+    position: relative;
+    display: inline-block;
+}
+.h1::before,
+.h2::before{
+    font-family: 'La Belle Aurore',cursive;
+    color: var(--clr);
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    left: -2rem;
+} 
+.h1::after,
+.h2::after{
+    font-family: 'La Belle Aurore',cursive;
+    color: var(--clr);
+    font-size: 18px;
+    position: absolute;
+    left: -2rem;
+    bottom: -1.5rem;
+}
+
+.h1::before
+{
+    content: '<h1>';
+}
+.h1::after
+{
+    content: '</h1>';
+}
+.h2::before{
+    content: '<h2>';
+}
+.h2::after{
+    content: '</h2>';
+}
+.row.text-center {
+	margin-top: 50px;
+}
+.root{
+    position: relative;
+}
+
+#alert {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 10px;
+}
+
+.timer h2,
+.root h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.timer span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
