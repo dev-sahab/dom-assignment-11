@@ -80,12 +80,16 @@ start.onclick = () => {
         ss.innerHTML = count;
         counter.play();
     }, 1000)
+
+    start.style.pointerEvents = "none"
 }
 
 
 stop.onclick = () => {
     clearInterval(countDown);
     a2.play();
+
+    start.style.pointerEvents = "inherit"
 }
 
 reset.onclick = () => {
@@ -95,5 +99,7 @@ reset.onclick = () => {
     error.play();
     ss.innerHTML = "0" + count;
     mm.innerHTML = "0" + count2;
+    
+    start.style.pointerEvents = "inherit"
 }
 
